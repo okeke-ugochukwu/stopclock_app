@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> StopClock App </title> 
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css"> <!--for google fonts-->
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+            
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Open Graph data-->
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content=""/>
+        <meta property="og:description" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="600"/>
+        <meta property="og:image:alt" content="| Website Image Snippet"/>
+        <meta name="robots" content="follow, index">
+
+        <!--Twitter Cards-->
+        <meta name="twitter:card" content="large_summary_image">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:url" content="https://">
+        <meta name="twitter:image" content="https://">
+
+       <style>
+           * {
+               box-sizing: border-box;
+               margin: 0;
+               padding: 0;
+               border: 0;
+           }
+           *:focus {
+               outline: none;
+           }
+           body {
+               height: 100vh;
+               font-family: 'Raleway', sans-serif;
+               display: flex;
+               flex-direction: columns;
+               align-items: center;
+               justify-content: center;
+               text-align: center;
+           }
+           .background-object {
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: -1;
+               border-radius: 100%;
+               width: 500px;
+               height: 500px;
+               background: goldenrod;
+           }
+           .card {
+               width: 90%;
+               max-width: 500px;
+               height: 20%;
+               display: flex;
+               justify-content: space-between;
+           }
+           .fig-box {
+               padding: 15px;
+               width: 30%;
+               font-size: 5.5rem;
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               align-items: center;
+               border-radius: 15px;
+               background: rgb(50, 0, 83);
+               color: white;
+           }
+
+       </style>
+        
+    </head>
+
+    <body>
+        
+        <div class="card">
+            <div class="fig-box" id="hours">
+                <span id="hour-left_fig"> 0 </span>
+                <span id="hour-right_fig"> 0 </span>
+            </div>
+
+            <div class="fig-box" id="minutes">
+                <span id="minute-left_fig"> 0 </span>
+                <span id="minute-right_fig"> 0 </span>
+            </div>
+
+            <div class="fig-box" id="seconds">
+                <span id="seconds-left_fig"> 0 </span>
+                <span id="seconds-right_fig"> 0 </span>
+            </div>
+
+
+        </div>
+
+       
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
