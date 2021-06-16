@@ -45,7 +45,31 @@ setInterval(() => {
         hour_Int2++;
         document.getElementById("hour-right_fig").innerText = hour_Int2;
     }
+    if (hour_Int2 == 10){
+        hour_Int2 = 0;
+        document.getElementById("hour-right_fig").innerText = 0;
+
+        hour_Int1++;
+        document.getElementById("hour-left_fig").innerText = hour_Int1;
+    }
+    if (hour_Int1 == 2) {
+        hour_Int1, hour_Int2, minute_Int1, minute_Int2, seconds_Int1,seconds_Int2 = 0;
+    }
     
 
    
-}, 1);
+}, 1000);
+
+function resetTimer() {
+    figures = document.getElementsByClassName("fig"); var fg;
+    console.log(figures.length);
+
+    for(fg = 0; fg < figures.length; fg++) {
+        figures[fg].innerText = 0;
+    }
+    
+}
+
+document.body.addEventListener("click", function() {
+   resetTimer();
+})
