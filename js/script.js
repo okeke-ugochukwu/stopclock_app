@@ -1,3 +1,12 @@
+//refactoring code to work with array generated from list of elements innerText
+figures = document.getElementsByClassName("fig"); var fg;
+for(fg = 0; fg < figures.length; fg++) {
+    console.log(figures[fg].innerText);
+}
+
+
+
+
 //seconds
 seconds_Int2 = document.getElementById("seconds-right_fig").innerText * 1;
 seconds_Int1 = document.getElementById("seconds-left_fig").innerText * 1;
