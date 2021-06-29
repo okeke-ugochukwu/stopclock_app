@@ -74,7 +74,7 @@
                width: 30%;
                font-size: 5.5rem;
                display: grid;
-               gap: 10px;
+               gap: 5px;
                grid-template-columns: repeat(2, 1fr);
                align-items: center;
                
@@ -90,6 +90,14 @@
             padding: 10px;
             border: 1px solid rgb(50, 0, 83);
             border-radius: 5px 0px 0px 5px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
         }
         button {
             background: rgb(50, 0, 83);

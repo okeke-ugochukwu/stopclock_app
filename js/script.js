@@ -94,3 +94,4 @@ controlBtns[1].addEventListener("click", function() {
 controlBtns[2].addEventListener("click", function() {
     resetTimer();
 })
+    
